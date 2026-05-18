@@ -1,0 +1,80 @@
+/* index.css */
+
+/* Custom Halimun font */
+@font-face {
+  font-family: "Halimun";
+  src: url("./assets/fonts/Halimun.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global */
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --hh-paper: #0a0a0a;
+  --hh-paper-soft: #151515;
+
+  --hh-honey: #f3e7d0;
+  --hh-honey-soft: #fff4df;
+
+  --hh-ink: #f5f5f5;
+
+  --hh-olive: #8b9a5b;
+
+  --hh-border: #2a2a2a;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Halimun", cursive;
+}
+
+body,
+p,
+li,
+span,
+a,
+button,
+input,
+textarea {
+  font-family: "Times New Roman", serif;
+}
+
+.script-font {
+  font-family: "Halimun", cursive;
+}
+
+.serif-font {
+  font-family: "Times New Roman", serif;
+}
