@@ -4,37 +4,53 @@ import { artists } from "../data/artists";
 export default function About() {
   return (
     <main className="min-h-screen bg-[--hh-paper] px-4 py-12">
-      <section className="max-w-6xl mx-auto">
-        <h1 className="text-4xl md:text-5xl text-center mb-10">
-          Meet theArtists
+      <section className="mx-auto max-w-6xl">
+        <h1 className="script-font mb-12 px-3 pb-3 text-center text-6xl leading-[1.7] md:text-7xl">
+          Meet The Artists
         </h1>
 
         <div className="grid gap-8 md:grid-cols-2">
           {artists.map((artist) => (
             <article
               key={artist.id}
-              className="rounded-2xl border border-[--hh-border] bg-[--hh-paper-soft] p-6 shadow-sm"
+              className="overflow-hidden rounded-2xl border border-[--hh-border] bg-[--hh-paper-soft] shadow-sm"
             >
-              <img
-                src={artist.photo}
-                alt={`${artist.name}, ${artist.role}`}
-                className="w-full aspect-[4/3] object-cover rounded-xl mb-5 bg-white/40"
-              />
+              <div className="bg-black">
+                <img
+                  src={artist.photo}
+                  alt={`${artist.name}, ${artist.role}`}
+                  className="aspect-[4/3] w-full object-cover"
+                />
+              </div>
 
-              <h2 className="text-3xl mb-1">{artist.name}</h2>
-              <p className="text-[--hh-ink]/70 mb-4">{artist.role}</p>
+              <div className="p-6">
+                <h2 className="script-font px-2 pb-2 text-5xl leading-[1.7]">
+                  {artist.name}
+                </h2>
 
-              <p className="text-[--hh-ink]/80 mb-4">{artist.bio}</p>
+                <p className="serif-font mb-6 uppercase tracking-[0.18em] text-[--hh-honey]">
+                  {artist.role}
+                </p>
 
-              <div className="flex flex-wrap gap-2">
-                {artist.specialties.map((specialty) => (
-                  <span
-                    key={specialty}
-                    className="rounded-full bg-[--hh-honey]/20 px-3 py-1 text-sm"
-                  >
-                    {specialty}
-                  </span>
-                ))}
+                <div className="serif-font space-y-5 leading-relaxed text-[--hh-ink]/80">
+                  {artist.bio
+                    .split(/\r?\n\r?\n/)
+                    .filter((paragraph) => paragraph.trim() !== "")
+                    .map((paragraph, index) => (
+                      <p key={index}>{paragraph.trim()}</p>
+                    ))}
+                </div>
+
+                <div className="mt-8 flex flex-wrap gap-2">
+                  {artist.specialties.map((specialty) => (
+                    <span
+                      key={specialty}
+                      className="serif-font rounded-full border border-[--hh-border] bg-black/20 px-4 py-1 text-sm uppercase tracking-wide text-[--hh-ink]/85"
+                    >
+                      {specialty}
+                    </span>
+                  ))}
+                </div>
               </div>
             </article>
           ))}
