@@ -1,6 +1,3 @@
-/* index.css */
-
-/* Custom Halimun font */
 @font-face {
   font-family: "Halimun";
   src: url("./assets/fonts/Halimun.otf") format("opentype");
@@ -8,12 +5,20 @@
   font-style: normal;
 }
 
-/* Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Global */
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -32,7 +37,6 @@ html {
   --hh-border: #2a2a2a;
 }
 
-/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -49,7 +53,6 @@ html {
   animation: fadeIn 0.8s ease forwards;
 }
 
-/* Typography */
 
 h1,
 h2,
