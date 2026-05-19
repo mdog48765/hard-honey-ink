@@ -20,7 +20,7 @@ export default function Footer() {
       </div>
       <div className="bg-[--hh-paper-soft]/90 text-center text-sm text-[--hh-ink]/60 py-2">
         <p>
-          Website by {"Michael Kyle"}
+          Website by Michael Kyle
         </p>
       </div>
     </footer>

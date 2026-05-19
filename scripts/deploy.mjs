@@ -1,6 +1,6 @@
 import { execSync } from "node:child_process";
 
-const message = process.argv.slice(2).join(" ") || "Update site";
+const message = process.argv.slice(2).join(" ") || "update";
 
 function run(command) {
   console.log(`\n> ${command}`);
