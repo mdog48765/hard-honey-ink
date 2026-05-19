@@ -41,26 +41,22 @@ export default function Home() {
           Contact / Booking
         </Link>
 
-        {/* Secondary CTAs */}
-        <div className="serif-font mt-6 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm uppercase tracking-[0.18em] text-white/70 sm:text-base">
-          <Link
-            to="/portfolio"
-            className="transition-colors hover:text-[--hh-honey]"
-          >
-            View Portfolios
-          </Link>
+       {/* Secondary CTAs */}
+<div className="serif-font mt-6 flex w-full max-w-md flex-col gap-3 px-6 sm:flex-row sm:justify-center sm:px-0">
+  <Link
+    to="/portfolio"
+    className="rounded-full border border-white/25 px-5 py-2 text-center text-sm font-semibold uppercase tracking-[0.14em] text-white/85 transition-colors hover:border-[--hh-honey] hover:text-[--hh-honey]"
+  >
+    View Portfolio
+  </Link>
 
-          <span className="text-white/30">•</span>
-
-          <Link
-            to="/about"
-            className="transition-colors hover:text-[--hh-honey]"
-          >
-            Meet The Artists
-          </Link>
-
-
-        </div>
+  <Link
+    to="/about"
+    className="rounded-full border border-white/25 px-5 py-2 text-center text-sm font-semibold uppercase tracking-[0.14em] text-white/85 transition-colors hover:border-[--hh-honey] hover:text-[--hh-honey]"
+  >
+    Meet Artists
+  </Link>
+</div>
       </div>
     </section>
   );
