@@ -32,7 +32,7 @@ photo: "/artists/shelby.jpg",
   {
     id: "carly",
     name: "Carly",
-    role: "Tattoo Artist",
+    role: "Shop Manager,Tattoo Artist",
     specialties: ["Black and Grey", "Reworks", "Fine Line", "Custom Tattoos"],
     bio: `My name is Carly, I am the shop manager and a full time artist here at Hard Honey Ink.
 
