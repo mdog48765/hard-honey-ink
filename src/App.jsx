@@ -23,8 +23,8 @@ export default function App() {
           <Route path="/booking" element={<Booking />} />
         </Routes>
         <Footer />
-        <Analytics />
       </Router>
+      <Analytics />
     </div>
   );
 }
