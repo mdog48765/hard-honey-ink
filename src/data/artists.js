@@ -3,7 +3,7 @@ export const artists = [
     id: "shelby",
     name: "Shelby",
     role: "Owner, Operator, Lead Tattoo Artist",
-    specialties: ["American Traditional", "Floral", "Custom Designs"],
+    specialties: ["American Traditional", "Floral", "Glitter", "Fine Line", "Custom Tattoos"],
     bio: "Shelby specializes in bold American Traditional and floral tattoo work with clean lines, strong readability, and a calm appointment experience.",
     photo: "/artists/shelby.jpg",
     portfolio: [
@@ -13,13 +13,17 @@ export const artists = [
       "/portfolio/shelby-4.jpg",
       "/portfolio/shelby-5.jpg",
       "/portfolio/shelby-6.jpg",
+      "/portfolio/shelby-7.jpg",
+      "/portfolio/shelby-8.jpg",
+      "/portfolio/shelby-9.jpg",
+      "/portfolio/shelby-10.jpg",
     ],
   },
   {
     id: "carly",
     name: "Carly",
     role: "Tattoo Artist",
-    specialties: ["Black and Grey", "Fine Line", "Reworks", "Custom Tattoos"],
+    specialties: ["Black and Grey", "Reworks", "Fine Line", "Custom Tattoos"],
     bio: "Carly creates custom tattoo pieces with attention to placement, flow, and clean execution. Portfolio examples coming soon.",
     photo: "/artists/carly.jpg",
     portfolio: [
