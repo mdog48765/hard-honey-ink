@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import Booking from "./pages/Booking";
+import "@fontsource/great-vibes";
 
 export default function App() {
   return (

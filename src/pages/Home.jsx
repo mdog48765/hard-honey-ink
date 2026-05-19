@@ -6,13 +6,15 @@ export default function Home() {
     <section className="relative flex min-h-[90vh] w-full items-center justify-center overflow-hidden bg-black">
       {/* Video placeholder */}
       <video
-        className="absolute inset-0 h-full w-full object-cover"
-        src="/videos/placeholder.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-      />
+  className="absolute inset-0 h-full w-full object-cover"
+  autoPlay
+  muted
+  loop
+  playsInline
+  preload="auto"
+>
+  <source src="/videos/shop-loop.mp4" type="video/mp4" />
+</video>
 
       {/* Dark overlay */}
       <div className="absolute inset-0 z-0 bg-black/60"></div>
@@ -57,14 +59,7 @@ export default function Home() {
             Meet The Artists
           </Link>
 
-          <span className="text-white/30">•</span>
 
-          <Link
-            to="/booking"
-            className="transition-colors hover:text-[--hh-honey]"
-          >
-            Directions
-          </Link>
         </div>
       </div>
     </section>
