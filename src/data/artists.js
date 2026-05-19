@@ -24,7 +24,7 @@ export const artists = [
     name: "Carly",
     role: "Tattoo Artist",
     specialties: ["Black and Grey", "Reworks", "Fine Line", "Custom Tattoos"],
-    bio: "Carly creates custom tattoo pieces with attention to placement, flow, and clean execution. Portfolio examples coming soon.",
+    bio: "Carly creates custom tattoo pieces with attention to placement, flow, and clean execution.",
     photo: "/artists/carly.jpg",
     portfolio: [
       "/portfolio/carly-1.jpg",
@@ -33,7 +33,7 @@ export const artists = [
       "/portfolio/carly-4.jpg",
       "/portfolio/carly-5.jpg",
       "/portfolio/carly-6.jpg",
-        "/portfolio/carly-7.jpg",
+      "/portfolio/carly-7.jpg",
     ],
   },
 ];
