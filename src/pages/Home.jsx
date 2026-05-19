@@ -31,13 +31,41 @@ export default function Home() {
           Custom Tattoos · Jacksonville, IL
         </p>
 
-        {/* CTA */}
+        {/* Primary CTA */}
         <Link
           to="/booking"
           className="serif-font inline-block rounded-full bg-[--hh-honey] px-8 py-3 text-base font-semibold uppercase tracking-wide text-[--hh-paper] transition-colors hover:bg-[--hh-honey-soft] sm:text-lg"
         >
           Contact / Booking
         </Link>
+
+        {/* Secondary CTAs */}
+        <div className="serif-font mt-6 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm uppercase tracking-[0.18em] text-white/70 sm:text-base">
+          <Link
+            to="/portfolio"
+            className="transition-colors hover:text-[--hh-honey]"
+          >
+            View Portfolios
+          </Link>
+
+          <span className="text-white/30">•</span>
+
+          <Link
+            to="/about"
+            className="transition-colors hover:text-[--hh-honey]"
+          >
+            Meet The Artists
+          </Link>
+
+          <span className="text-white/30">•</span>
+
+          <Link
+            to="/booking"
+            className="transition-colors hover:text-[--hh-honey]"
+          >
+            Directions
+          </Link>
+        </div>
       </div>
     </section>
   );

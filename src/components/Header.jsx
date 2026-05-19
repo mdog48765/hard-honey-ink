@@ -22,8 +22,8 @@ export default function Header() {
           <nav className="hidden lg:flex items-center gap-8 text-[--hh-ink]">
             <Link to="/" className="hover:text-[--hh-honey] transition-colors">Home</Link>
             <Link to="/portfolio" className="hover:text-[--hh-honey] transition-colors">Portfolio</Link>
-                    <Link to="/booking" className="hover:text-[--hh-honey] transition-colors">Booking</Link>
-    <Link to="/about" className="hover:text-[--hh-honey] transition-colors">About</Link>
+                    <Link to="/booking" className="hover:text-[--hh-honey] transition-colors">Contact / Booking</Link>
+    <Link to="/about" className="hover:text-[--hh-honey] transition-colors">Meet The Artists</Link>
           </nav>
 
           {/* Mobile Hamburger */}
@@ -42,8 +42,8 @@ export default function Header() {
           <div className="lg:hidden mt-2 flex flex-col gap-3 pb-4 text-[--hh-ink]">
             <Link to="/" className="hover:text-[--hh-honey]" onClick={() => setMobileOpen(false)}>Home</Link>
             <Link to="/portfolio" className="hover:text-[--hh-honey]" onClick={() => setMobileOpen(false)}>Portfolio</Link>
-                   <Link to="/booking" className="hover:text-[--hh-honey]" onClick={() => setMobileOpen(false)}>Booking</Link>
-     <Link to="/about" className="hover:text-[--hh-honey]" onClick={() => setMobileOpen(false)}>About</Link>
+                   <Link to="/booking" className="hover:text-[--hh-honey]" onClick={() => setMobileOpen(false)}>Contact / Booking</Link>
+     <Link to="/about" className="hover:text-[--hh-honey]" onClick={() => setMobileOpen(false)}>Meet The Artists</Link>
           </div>
         )}
       </div>
