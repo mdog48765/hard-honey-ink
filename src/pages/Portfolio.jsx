@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { artists } from "../data/artists";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, EffectFade } from "swiper/modules";
-
+import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
@@ -46,9 +46,14 @@ function ArtistGallery({ artist }) {
   return (
     <section className="rounded-2xl border border-[--hh-border] bg-[--hh-paper-soft] p-5 shadow-sm">
       <div className="mb-6 text-center">
-<h2 className="script-font px-2 pb-2 text-5xl leading-[1.7] md:text-6xl">          {artist.name}
-        </h2>
-
+<Link
+  to={`/about#${artist.id}`}
+  className="inline-block cursor-pointer transition-opacity hover:opacity-70"
+>
+  <h2 className="script-font px-2 pb-2 text-5xl leading-[1.7] md:text-6xl">
+    {artist.name}
+  </h2>
+</Link>
         <p className="serif-font text-base tracking-wide text-[--hh-ink]/80 md:text-lg">
           {artist.specialties.join(" · ")}
         </p>
@@ -125,7 +130,7 @@ export default function Portfolio() {
   return (
     <main className="min-h-screen bg-[--hh-paper] px-4 py-12">
       <section className="mx-auto max-w-5xl">
-        <h1 className="script-font mb-12 text-center text-6xl leading-[1.45] md:text-7xl">
+        <h1 className="script-font mb-12 text-center text-6xl leading-[1.45] md:text-7xl cursor-default">
           Portfolio
         </h1>
 

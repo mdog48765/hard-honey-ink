@@ -1,7 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { artists } from "../data/artists";
+import { useLocation } from "react-router-dom";
 
 export default function About() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (!location.hash) return;
+
+    const id = location.hash.replace("#", "");
+
+    const scrollToArtist = () => {
+      const element = document.getElementById(id);
+
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    };
+
+    setTimeout(scrollToArtist, 100);
+  }, [location]);
+
   return (
     <main className="min-h-screen bg-[--hh-paper] px-4 py-12">
       <section className="mx-auto max-w-6xl">
@@ -12,8 +34,9 @@ export default function About() {
         <div className="grid gap-8 md:grid-cols-2">
           {artists.map((artist) => (
             <article
+              id={artist.id}
               key={artist.id}
-              className="overflow-hidden rounded-2xl border border-[--hh-border] bg-[--hh-paper-soft] shadow-sm"
+              className="scroll-mt-36 overflow-hidden rounded-2xl border border-[--hh-border] bg-[--hh-paper-soft] shadow-sm md:scroll-mt-40"
             >
               <div className="bg-black">
                 <img
@@ -24,7 +47,7 @@ export default function About() {
               </div>
 
               <div className="p-6">
-                <h2 className="script-font px-2 pb-2 text-5xl leading-[1.7]">
+                <h2 className="script-font px-3 pb-3 text-5xl leading-[1.75] md:text-6xl">
                   {artist.name}
                 </h2>
 
