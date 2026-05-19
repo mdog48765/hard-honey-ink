@@ -13,7 +13,7 @@ export default function Booking() {
         </p>
 
         <div className="rounded-2xl border border-[--hh-border] bg-[--hh-paper-soft] p-6 shadow-sm">
-          <p className="mb-2">Phone: (815)999-7442</p>
+          <p className="mb-2">Phone: (217)291-9781</p>
           <p className="mb-6">Email: shelby@hardhoneyink.com</p>
 
           <SocialLinks />

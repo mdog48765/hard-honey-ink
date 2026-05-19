@@ -19,7 +19,7 @@ export const artists = [
     id: "carly",
     name: "Carly",
     role: "Tattoo Artist",
-    specialties: ["Fine Line", "Custom Tattoos", "Blackwork"],
+    specialties: ["Black and Grey", "Fine Line", "Reworks", "Custom Tattoos"],
     bio: "Carly creates custom tattoo pieces with attention to placement, flow, and clean execution. Portfolio examples coming soon.",
     photo: "/artists/carly.jpg",
     portfolio: [
