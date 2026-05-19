@@ -34,9 +34,28 @@ photo: "/artists/shelby.jpg",
     name: "Carly",
     role: "Tattoo Artist",
     specialties: ["Black and Grey", "Reworks", "Fine Line", "Custom Tattoos"],
-    bio: "Carly creates custom tattoo pieces with attention to placement, flow, and clean execution.",
-    photo: "/artists/carly.jpg",
-    portfolio: [
+    bio: `My name is Carly, I am the shop manager and a full time artist here at Hard Honey Ink.
+
+To put it simple, the art of Tattooing is my passion.
+
+I have been tattooing on and off for 9 years.
+
+All my life I have been artistic and had a passion for creating and fixing things.
+
+Before my time here at Hard Honey Ink I was the artist behind the Starlight Tattoo brand, where I gained alot of experience.
+
+In November of 2025 I was blessed with the opportunity to start my career at Hard Honey and it has changed my life.
+
+The Customer experience has always been very important to me, I strive to make it a clean, safe and comfortable environment for every client, and i am always willing to lend an ear to lessen some of life's burdens.
+
+I specialize in reworks, fine line, and anything black and grey, however I love to take on other pieces as well.
+
+I look forward to my growth here and I appreciate you taking the time to get to know me a little!
+
+Thank you for your continued support.`,
+
+      photo: "/artists/carly.jpg",
+      portfolio: [
       "/portfolio/carly-1.jpg",
       "/portfolio/carly-2.jpg",
       "/portfolio/carly-3.jpg",
