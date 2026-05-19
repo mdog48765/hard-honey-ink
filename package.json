@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@fontsource/great-vibes": "^5.2.8",
+    "@vercel/analytics": "^2.0.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-icons": "^5.6.0",
@@ -36,5 +37,4 @@
   "overrides": {
     "vite": "npm:rolldown-vite@7.2.5"
   }
-  
 }
