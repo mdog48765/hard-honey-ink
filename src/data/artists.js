@@ -33,6 +33,7 @@ export const artists = [
       "/portfolio/carly-4.jpg",
       "/portfolio/carly-5.jpg",
       "/portfolio/carly-6.jpg",
+        "/portfolio/carly-7.jpg",
     ],
   },
 ];
