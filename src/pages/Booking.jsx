@@ -56,7 +56,7 @@ export default function Booking() {
                   rel="noreferrer"
                   className="text-lg text-[--hh-ink] transition-colors hover:text-[--hh-honey]"
                 >
-                  405 S Main St
+                  405 S Main St.
                   <br />
                   Jacksonville, IL 62650
                 </a>

@@ -46,14 +46,14 @@ function ArtistGallery({ artist }) {
   return (
     <section className="rounded-2xl border border-[--hh-border] bg-[--hh-paper-soft] p-5 shadow-sm">
       <div className="mb-6 text-center">
-<Link
-  to={`/about#${artist.id}`}
-  className="inline-block cursor-pointer transition-opacity hover:opacity-70"
->
-  <h2 className="script-font px-2 pb-2 text-5xl leading-[1.7] md:text-6xl">
-    {artist.name}
-  </h2>
-</Link>
+      <Link
+         to={`/about#${artist.id}`}
+          className="inline-block cursor-pointer transition-opacity hover:opacity-70"
+           >
+             <h2 className="script-font px-2 pb-2 text-5xl leading-[1.7] md:text-6xl">
+                {artist.name}
+              </h2>
+        </Link>
         <p className="serif-font text-base tracking-wide text-[--hh-ink]/80 md:text-lg">
           {artist.specialties.join(" · ")}
         </p>
